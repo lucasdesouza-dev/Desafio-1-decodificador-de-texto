@@ -14,7 +14,7 @@
   <div class="container-principal">
   <div class="container"> 
   <div class="input-text">
-    <textarea   spellcheck="false" cols="150" rows="50" placeholder="Digite seu texto"></textarea>
+    <textarea id="campText"  spellcheck="false" cols="150" rows="50" placeholder="Digite seu texto"></textarea>
   </div>
   <div class="sessao-btn">
     <div class="text-advertencia">
@@ -22,8 +22,8 @@
     <p> Apenas letras minúsculas e sem acento.</p>
   </div>
   <div class="btn">
-    <button id="criptografar">Criptografar</button>
-    <button id="descriptografar">Descriptografar</button>
+    <button id="criptografar" onclick="criptografar()">Criptografar</button>
+    <button id="descriptografar" onclick="descriptografar()">Descriptografar</button>
   </div>
   </div>
 </div>
@@ -32,10 +32,10 @@
     <div><img src="./img/sem-mensagem.svg" alt=""></div>
     <div class="text">
       <h1>Nenhuma Mensagem encontrada</h1>
-    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+    <p id="textResultado">Digite um texto que você deseja criptografar ou descriptografar.</p>
     </div>
     
   </div>
   </div>
-
+<script src="decodificador.js"></script>
 </body>
