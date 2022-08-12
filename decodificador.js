@@ -1,5 +1,3 @@
-
-
 function criptografar() {
 
   const inputText = document.querySelector("#campText")
@@ -34,8 +32,8 @@ function criptografar() {
 
 
 
+  document.getElementById("textResultado").innerHTML = " <div class='stylefinal'><textarea id='textoCodificado' class='text'>" + text23 + "</textarea> <div class='btnCopiar'><button  id='copiar'  onclick='copiarTexto()'>Copiar</button></div></div >"
 
-  console.log(text23)
 
 }
 function descriptografar() {
@@ -72,7 +70,16 @@ function descriptografar() {
 
 
 
+  document.getElementById("textResultado").innerHTML = " <div class='stylefinal'><textarea id='textoCodificado' class='text'>" + text22 + "</textarea><div class='btnCopiar'><button  id='copiar'  onclick='copiarTexto()'>Copiar</button></div></div>"
 
-  console.log(text22)
 
+
+
+}
+
+function copiarTexto() {
+  var text = document.getElementById('textoCodificado');
+  text.select();
+  document.execCommand('copy');
+  alert("Texto copiado para área de transferência.");
 }
